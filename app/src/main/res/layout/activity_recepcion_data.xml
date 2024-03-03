@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityRecepcionData">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fototop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ufg_2"/>
+
+        <TextView
+            android:id="@+id/tituloufg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universidad Francisco Gavidia"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"
+            android:layout_below="@id/fototop"/>
+
+        <TextView
+            android:id="@+id/subtituloufg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de nuevo estudiante"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/tituloufg"/>
+
+        <TextView
+            android:id="@+id/datos_ingresados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Los datos ingresados son: "
+            android:textSize="14sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/subtituloufg"/>
+
+        <TextView
+            android:id="@+id/lbl_Nombre_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/datos_ingresados"/>
+
+        <TextView
+            android:id="@+id/lbl_apellido_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/lbl_Nombre_result"/>
+
+        <TextView
+            android:id="@+id/lbl_email_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/lbl_apellido_result"/>
+
+        <Button
+            android:id="@+id/btn_Salir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salir"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lbl_email_result"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

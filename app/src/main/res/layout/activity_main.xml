@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fototop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ufg_2"/>
+
+        <TextView
+            android:id="@+id/tituloufg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Universidad Francisco Gavidia"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20sp"
+            android:layout_below="@id/fototop"/>
+
+        <TextView
+            android:id="@+id/subtituloufg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de nuevo estudiante"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/tituloufg"/>
+
+        <TextView
+            android:id="@+id/lbl_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Nombres"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/subtituloufg"/>
+
+        <EditText
+            android:id="@+id/txt_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/lbl_nombres"/>
+
+        <TextView
+            android:id="@+id/lbl_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Apellidos"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/txt_nombres"/>
+
+        <EditText
+            android:id="@+id/txt_apellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/lbl_apellidos"/>
+
+        <TextView
+            android:id="@+id/lbl_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Email"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@id/txt_apellidos"/>
+
+        <EditText
+            android:id="@+id/txt_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@id/lbl_Email"/>
+
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Datos"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txt_Email"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
